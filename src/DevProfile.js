@@ -83,7 +83,7 @@ class DevProfile extends React.Component {
             {(this.state.repos).map((eachRepo) => (
             <div>
             
-            <a href = {`${eachRepo.html_url}`} style={{ textDecoration: 'none' }}><span className='repoName'>{eachRepo.repoName} </span><img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg'></img></a>
+            <a href = {`${eachRepo.html_url}`} style={{ textDecoration: 'none' }}><span className='repoName'>{eachRepo.repoName} </span><img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg' alt=""></img></a>
             <span className='updatedOn'>Updated on {(new Date(eachRepo.updated_at)).toDateString()} </span>
             <div className='repoDescription'>{eachRepo.description}</div>
             <hr></hr>
