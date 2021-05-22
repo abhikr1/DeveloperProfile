@@ -1,0 +1,117 @@
+.navbar h2 {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.companyIcon0 {
+  height: 24px;
+}
+
+.companyIcon1 {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.companyIcon2 {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.companyIcon3 {
+    height: 24px;
+    margin-left: 25px;
+}
+
+.repoContent {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.repoContent hr {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.repoName {
+  font-size: 36px;
+  color: #388bfd;
+  text-decoration: none;
+}
+
+.repoDescription {
+  font-size: 32px;
+}
+
+.updatedOn {
+  color: #9F8E63;
+  margin-left: 20px;
+}
+
+.devIcons {
+  margin-bottom: 30px;
+}
+
+.gitAddInfo {
+  display: flex;
+}
+
+.devGithubInfo h3 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-top: 100px;
+}
+
+.devGithubInfo h5 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.devGithubInfo hr {
+  max-width: calc(100vw - 60px);
+}
+
+.navbar {
+  background-color: #3f3d56;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerOne {
+  margin-left: 30px;
+  margin-right: 910px;
+}
+
+
+.bigAvatar {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.devGithubInfo {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  background-color: #cdcfd1;
+  column-gap: 0px;
+}
+
+.repoList {
+  font-size: 56px;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 411px) {
+  .devGithubInfo {
+    grid-template-columns: 1fr;
+  }
+}
