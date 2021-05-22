@@ -61,10 +61,10 @@ class HomePage extends React.Component {
         {this.state.api_res_id ?
         <div class="homePageDevs2">
               <span className='eachDevSpan'>
-              <img className="idIcon" src={`${this.state.api_res_avatar_url}`}></img> 
+              <img className="idIcon" src={`${this.state.api_res_avatar_url}`} alt=""></img> 
               <span className='devId' >{(this.state.api_res_id)} </span>
               <Link  to={`/developers/${this.state.api_res_id}`}>
-              <img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg'></img>
+              <img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg' alt=""></img>
               </Link>
               </span>
         </div>:null} 
@@ -72,10 +72,10 @@ class HomePage extends React.Component {
                 <div class="homePageDevs" >
                 {(this.state.dev).map((eachDev) => (
                 <span className='eachDevSpan'>
-                <img className="idIcon" src={`${eachDev.avatar_url}`}></img> 
+                <img className="idIcon" src={`${eachDev.avatar_url}`} alt=""></img> 
                 <span className='devId' >{(eachDev.id)} </span>
                 <Link  to={`/developers/${eachDev.id}`}>
-                <img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg'></img>
+                <img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg' alt=""></img>
                 </Link>
                 </span>
                 ))}

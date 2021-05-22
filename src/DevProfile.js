@@ -56,13 +56,13 @@ class DevProfile extends React.Component {
                     <h3>{this.state.myName}</h3>
                     <h5>{this.state.bio}</h5>
                     <div className='devIcons'>
-                    <a href = {`https://github.com/${this.state.id}`} target="_blank"><img className="companyIcon0" src={'/images/iconfinder_github_317712.png'} alt="icon" /></a>
-                    {this.state.hackerrank_id?<a href = {`https://www.hackerrank.com/${this.state.hackerrank_id}`} target="_blank"><img className="companyIcon3" src={'/images/iconfinder_160_Hackerrank_logo_logos_4373234.png'} alt="icon"/></a>:null}
-                    {this.state.codechef_id?<a href = {`https://www.codechef.com/users/${this.state.codechef_id}`} target="_blank"><img className="companyIcon3" src={'/images/codechef-1324440139527402917_32.png'} alt="icon"/></a>:null}
-                    {this.state.linkedin_id?<a href = {`https://www.linkedin.com/in/${this.state.linkedin_id}`} target="_blank"><img className="companyIcon3" src={'/images/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.png'} alt="icon"/></a>:null}
-                    {this.state.medium_id?<a href = {`https://medium.com/@${this.state.medium_id}`} target="_blank"><img className="companyIcon3" src={'/images/iconfinder_Circled_Medium_svg5_5279113.png'} alt="icon"/></a>:null}
-                    {this.state.twitter_id?<a href = {`https://twitter.com/${this.state.twitter_id}`} target="_blank"><img className="companyIcon3" src={'/images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png'} alt="icon"/></a>:null}
-                    {this.state.email?<a href = {`mailto:${this.state.email}`} target="_blank"><img className="companyIcon3" src={'/images/email-24px.svg'} alt="icon"/></a>:null}
+                    <a href = {`https://github.com/${this.state.id}`}><img className="companyIcon0" src={'/images/iconfinder_github_317712.png'} alt="icon" /></a>
+                    {this.state.hackerrank_id?<a href = {`https://www.hackerrank.com/${this.state.hackerrank_id}`}><img className="companyIcon3" src={'/images/iconfinder_160_Hackerrank_logo_logos_4373234.png'} alt="icon"/></a>:null}
+                    {this.state.codechef_id?<a href = {`https://www.codechef.com/users/${this.state.codechef_id}`} ><img className="companyIcon3" src={'/images/codechef-1324440139527402917_32.png'} alt="icon"/></a>:null}
+                    {this.state.linkedin_id?<a href = {`https://www.linkedin.com/in/${this.state.linkedin_id}`}><img className="companyIcon3" src={'/images/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.png'} alt="icon"/></a>:null}
+                    {this.state.medium_id?<a href = {`https://medium.com/@${this.state.medium_id}`} ><img className="companyIcon3" src={'/images/iconfinder_Circled_Medium_svg5_5279113.png'} alt="icon"/></a>:null}
+                    {this.state.twitter_id?<a href = {`https://twitter.com/${this.state.twitter_id}`}><img className="companyIcon3" src={'/images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png'} alt="icon"/></a>:null}
+                    {this.state.email?<a href = {`mailto:${this.state.email}`} ><img className="companyIcon3" src={'/images/email-24px.svg'} alt="icon"/></a>:null}
                     </div>
                     <div className='gitAddInfo'>
                     <img className="companyIcon2" src={'/images/location_on-24px.svg'} alt="icon"/>
@@ -83,7 +83,7 @@ class DevProfile extends React.Component {
             {(this.state.repos).map((eachRepo) => (
             <div>
             
-            <a href = {`${eachRepo.html_url}`} target="_blank" style={{ textDecoration: 'none' }}><span className='repoName'>{eachRepo.repoName} </span><img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg'></img></a>
+            <a href = {`${eachRepo.html_url}`} style={{ textDecoration: 'none' }}><span className='repoName'>{eachRepo.repoName} </span><img className="arrowIcon" style={{cursor: 'pointer'}} src='/images/north_east-24px.svg'></img></a>
             <span className='updatedOn'>Updated on {(new Date(eachRepo.updated_at)).toDateString()} </span>
             <div className='repoDescription'>{eachRepo.description}</div>
             <hr></hr>
