@@ -23,7 +23,7 @@ class HomePage extends React.Component {
         .then(response => response.json())
         .then(response => {
           this.setState({api_res_id: response.id});
-          this.setState({api_res_avatar_url: response.avatarUrl});
+          this.setState({api_res_avatar_url: response.avatar_url});
       });
     }
 
