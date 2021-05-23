@@ -110,8 +110,31 @@
   font-weight: normal;
 }
 
-@media screen and (max-width: 411px) {
+.devGithubInfo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  justify-items: center;
+  background-color: #cdcfd1;
+  column-gap: 0px;
+}
+
+@media screen and (max-width: 600px) {
   .devGithubInfo {
     grid-template-columns: 1fr;
   }
+  .devGithubInfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #cdcfd1;
+    column-gap: 0px;
+  }
+  .bigAvatar {
+  height: 200px;
+  width: 400px;
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
 }

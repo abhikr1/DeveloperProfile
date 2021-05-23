@@ -7,6 +7,7 @@
     justify-items: center;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .headerText {
@@ -19,13 +20,21 @@
     margin-right: 20px;
   }
   
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 1100px) {
     .headerContainer {
-    font-size: 36px;
-    grid-template-columns: 1fr;
+      background-color: #3f3d56;
+      font-size: 72px;
+      color: #fff;
+      height: 600px;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      justify-content: space-between;
     }
-    .headerImg {
-      display: none;
+      .headerImg {
+        width: 600px;
+        height: 500px;
+        margin-right: 20px;
     }
     .headerText {
       margin: 0 auto;
